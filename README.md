@@ -271,7 +271,7 @@ There are two controller classes (API classes).
                 ]
             }
 
-            Response: {
+          Response: {
                 "entity": {
                     "orderId": 19,
                     "total": 268.9,
