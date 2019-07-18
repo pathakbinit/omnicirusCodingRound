@@ -39,7 +39,7 @@ public class OrderController {
         try {
             order1 = orderService.updateOrder(order, orderId);
         } catch (Exception e) {
-            return Response.noContent().entity("Error serving the request").build();
+            return Response.noContent().entity(e.getMessage()).build();
         }
         return Response.accepted().entity(order1).build();
     }
